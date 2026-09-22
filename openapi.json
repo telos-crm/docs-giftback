@@ -708,8 +708,14 @@
                                         "example": false
                                     },
                                     "seller_name": {
+                                        "description": "Nome do vendedor (opcional)",
                                         "type": "string",
                                         "example": "Leonardo Campos"
+                                    },
+                                    "seller_id": {
+                                        "description": "Código do vendedor no sistema de origem (opcional)",
+                                        "type": "string",
+                                        "example": "V-001"
                                     },
                                     "bonus_ids": {
                                         "description": "IDs dos bônus a utilizar (obtidos em /bonus/available). Envie TODOS os IDs recebidos ou array vazio [] se não quiser usar.",
@@ -975,6 +981,16 @@
                                     "items"
                                 ],
                                 "properties": {
+                                    "seller_name": {
+                                        "description": "Nome do vendedor (opcional)",
+                                        "type": "string",
+                                        "example": "Leonardo Campos"
+                                    },
+                                    "seller_id": {
+                                        "description": "Código do vendedor no sistema de origem (opcional)",
+                                        "type": "string",
+                                        "example": "V-001"
+                                    },
                                     "customer": {
                                         "properties": {
                                             "country_code": {
@@ -1274,8 +1290,14 @@
                                         "example": "IN_STORE"
                                     },
                                     "seller_name": {
+                                        "description": "Nome do vendedor (opcional)",
                                         "type": "string",
                                         "example": "Leonardo Campos"
+                                    },
+                                    "seller_id": {
+                                        "description": "Código do vendedor no sistema de origem (opcional)",
+                                        "type": "string",
+                                        "example": "V-001"
                                     },
                                     "generated_bonus_ids": {
                                         "description": "IDs dos bônus gerados pelo /bonus/submit. Envie array vazio [] se não foi gerado bônus. Valores null são ignorados automaticamente.",
